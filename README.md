@@ -36,6 +36,6 @@ Usage
 Create an error handling route:
 
     // assumes you have views such as: 404.html, 500.html, etc.
-    app.get('/error/:code', function (page) {
-      page.render(code);
+    app.get('/error/:code', function (page, model, params) {
+      page.render(params.code);
     });
