@@ -1,10 +1,4 @@
-exports.app = function (app) {
-  app.get('/error/:code', function (page, model, params) {
-    page.render('error:' + params.code)
-  });
-};
-
-exports.server = function (app) {
+module.exports = function (app) {
   app.all('*', function (req, res, next) {
     next('404: ' + req.url);
   });
