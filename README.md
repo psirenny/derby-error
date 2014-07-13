@@ -18,7 +18,7 @@ Of course, you can still do that if you'd like.
 Installation
 ------------
 
-    $ npm install --save derby-error
+    $ npm install derby-error --save
 
 In your server file:
 
