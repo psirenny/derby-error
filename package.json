@@ -4,8 +4,7 @@
     "url": "https://github.com/psirenny/derby-error/issues"
   },
   "dependencies": {
-    "error": "*",
-    "lodash": "*"
+    "express": "^4.8.2"
   },
   "description": "Add standard error routes to a Derby JS app.",
   "keywords": [

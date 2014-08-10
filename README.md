@@ -28,7 +28,7 @@ In your server file:
       // ...
       // ...
       // place after all other middleware
-      .use(error(expressApp));
+      .use(error());
 
 Usage
 -----
