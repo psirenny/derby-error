@@ -8,6 +8,7 @@ module.exports = function (callback) {
     var url = '/error/' + status;
     if (callback) callback(req, err);
     if (req.url === url) return next();
+    if (res.headersSent) return;
     res.redirect(url);
   };
 };
